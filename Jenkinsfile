@@ -3,6 +3,7 @@ pipeline {
     parameters {
       choice(name: 'Fruits', choices: ['Apple', 'Mango', 'Grapes'], description: "Select your Fruit")
       string(name: 'Input', default: "Myvalue", description: "Enter your Value" )
+    }
     stages {
         stage('Hello') {
             steps {
