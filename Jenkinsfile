@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
       choice(name: 'Fruits', choices: ['Apple', 'Mango', 'Grapes'], description: "Select your Fruit")
-      string(name: 'Input', default: "Myvalue", description: "Enter your Value" )
+      string(name: 'Input', defaultValue: "Myvalue", description: "Enter your Value" )
     }
     stages {
         stage('Hello') {
